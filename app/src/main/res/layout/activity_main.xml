@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/dragon" />
+
+    <EditText
+        android:id="@+id/Uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/userico"
+        android:ems="10"
+        android:hint="UserName"
+
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Pword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Uname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/userico"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Pword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+
+        android:background="#022810"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnLogin1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="81dp"
+        android:background="#11000000" />
+</RelativeLayout>
